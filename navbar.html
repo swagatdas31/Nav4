@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar 4</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+    <div id="curtain">
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul>
+            <li data-text="Home"><a href="#">Home</a></li>
+            <li data-text="About"><a href="#">About</a></li>
+            <li data-text="Services"><a href="#">Services</a></li>
+            <li data-text="Portfolio"><a href="#">Portfolio</a></li>
+            <li data-text="Contact"><a href="#">Contact</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </div>
+
+    <script type="text/javascript">
+        function toggle() {
+            var curtain = document.getElementById('curtain');
+            curtain.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
